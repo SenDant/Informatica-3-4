@@ -18,6 +18,10 @@
    hours = minutes/60;
    minutes2 = minutes%60;
 
+   float areacircle;
+   int radius = 12;
+   areacircle = 3.1416*(radius*radius);
+
    printf("----Area and Perimeter of a Rectangle----\n");
    printf("Area: %d \n", area);
    printf("Perimeter: %d \n", perimeter);
@@ -25,6 +29,7 @@
    printf("%d°F = %d°C\n", fahrenheit, celcius);
    printf("------Minutes into Hours and Minutes------\n");
    printf("%d minutes is equal to %d hours and %d minutes\n", minutes, hours, minutes2);
+   printf("------The area of a circle with a radius of %d is: %.2f------\n", radius, areacircle);
 
 
    return 0;
