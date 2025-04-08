@@ -1,26 +1,38 @@
  #include <stdio.h>
 
  int main() {
-   int length = 5;
-   int width = 15;
+  //rectangle area and perimeter
+   int length;
+   int width;
+   printf("Enter the rectangle's width: ");
+   scanf("%d", &width);
+   printf("Enter the rectangle's length: ");
+   scanf("%d", &length);
    int area;
    int perimeter;
    area = length * width;
-   perimeter = 4 * length;
+   perimeter = 2*(width+length);
 
-   int fahrenheit = 86;
+   //fahrenheit to celcius
+   int fahrenheit;
    int celcius;
+   printf("Enter Fahrenheit grades: ");
+   scanf("%d", &fahrenheit);
    celcius = (fahrenheit-32)/1.8;
-
-   int minutes = 349;
+   //minutes to hours and minutes
+   int minutes;
    int hours;
    int minutes2;
+   printf("Enter minutes: ");
+   scanf("%d", &minutes);
    hours = minutes/60;
    minutes2 = minutes%60;
 
    float areacircle;
-   int radius = 12;
+   int radius;
    areacircle = 3.1416*(radius*radius);
+   printf("Enter the radius of the circle: ");
+   scanf("%d", &radius);
 
    printf("----Area and Perimeter of a Rectangle----\n");
    printf("Area: %d \n", area);
