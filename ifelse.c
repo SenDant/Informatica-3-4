@@ -24,34 +24,53 @@ int main() {
     else {
         printf("%d is an odd number.\n", num);
     }
-    // 3. ????
+    // 3. date?
+    int day;
+    printf("--Please write a number between 1 and 7: \n");
+    scanf("%d", &day);
+    if (day == 1){
+        printf("-it is Monday\n");
+    }
+    if (day == 2){
+        printf("-it is Tuesday\n");
+    }
+    if (day == 3){
+        printf("-it is Wednesday\n");
+    }
+    if (day == 4){
+        printf("-it is Thursday\n");
+    }
+    if (day == 5){
+        printf("-it is Friday\n");
+    }
+    if (day == 6){
+        printf("-it is Saturday\n");
+    }
+    if (day == 7){
+        printf("-it is Sunday\n");
+    }
 
-    //Calculator
-    printf("This is a calculator of two integers.\n");
+    //Challengue. couldn't do it.
+    printf("---This is a calculator of two integers.---\n");
     int data1;
     int data2;
     char symbol;
-    char sum = "+";
-    char sub = "-";
-    char div = "/";
-    char mul = "x";
-    int add = (data1 + data2);
-    int subs = (data1 - data2);
-    int divi = (data1/data2);
-    int multi = (data1*data2);
-    printf("Please enter your operation: \n");
-    scanf("%d %c %d", data1, symbol, data2);
+    char add[] = "addition";
+    char sub[] = "substraction";
+    char div[] = "division";
+    char mul[] = "multiplication";
+    int addition = data1 + data2;
+    int substraction = data1 - data2;
+    int division = data1/data2;
+    int multiplication = data1*data2;
+    printf("--Please enter two integers n: \n");
+    scanf("%d %d", &data1, &data2);
+    printf("Now enter the type of operation you want: \n");
+    scanf("%c", &symbol);
 
-        if(symbol == sum); {
-        printf("%d + %d is %d.", data1, data2, add);
+        if(add); {
+        printf("- %d + %d is %d.\n", data1, data2, addition);
         }
-        else if(symbol == sub) {
-            printf("%d - %d is %d.", data1, data2, subs);
-        }
-        else if (symbol == div) {
-            printf("%d/%d is %d.", data1, data2, divi);
-        }
-        else if ();
 
     
 
